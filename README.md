@@ -6,11 +6,12 @@ Feel free to use ANY TOOL, ANY AI, ChatGPT and whatever you want as you wish :)
 ## Tasks
 Simple tasks, don't spend any time on these, copy code online instead
 1. **Load, preprocess, and augment data**
-2. **Classify images as cancerous or non-cancerous**
-   
-Complex tasks that will be evaluated based on approach (not acuracy not any other metric)
-3. **Generate cancerous images from non-cancerous images using generative networks**
-4. **Utilize Graph Convolutional Networks (GCNs) to analyze nucleus features**
+2. **Classify images as cancerous or non-cancerous**<br>
+Complex tasks that will be evaluated based on approach (not acuracy not any other metric) <br>
+3. **Generate cancerous images from non-cancerous images using generative networks**: take the NON CANCEROUS images as input and generate an output of how this image would look like if it was cancerous <br>
+yes i know this sounds counterproductive but for the main project youwill be required to *generate* the next stage of the cancer from the current stage using GAN so this is why I gave this task <br>
+4. **Utilize Graph Convolutional Networks (GCNs) to analyze nucleus features** <br>
+Why did i ask you to use graphs? because theyre cool (I'm sadistic and like y=to make your lives herder)
 
 ## Important Information
 - **Submission Deadline:** Before Friday
