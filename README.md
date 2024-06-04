@@ -10,7 +10,7 @@ These tasks will be evaluated based on approach (not acuracy not any other metri
 
 Use only 500 samples from the training data, the accuracy and other metrics don't matter as long as it's minimal so don't waste time on that :)
 
-1. **Utilize Graph Convolutional Networks (GCNs) to analyze nucleus features**, Incorporate strategies from the reference paper and,
+1. **Utilize Graph Based Networks (GNNs) to analyze nucleus features**, Incorporate strategies from the reference paper and,
 Utilize GNNs 
 The key idea is to learn nucleus features based on structure, texture, and edge at the nuclei level first and then move to inter-nuclear graphs (see paper;mentioned above).<br>
 2. **Generate cancerous images from non-cancerous images using generative networks**: Use Any type of generative network (i'd prefer gans / diffusion models) to take the NON CANCEROUS images as input and generate an output of how this image would look like if it was cancerous. 
