@@ -1,58 +1,37 @@
 # Cancer Image Analysis Competition Overview
 
-Welcome to the Cancer Image Analysis Competition! In this competition, you will be working with histopathological images to complete a series of tasks designed to assess your skills in mainly: image classification, generative networks, and graph-based networks ( don't wory if you've not used GANs or GNN you can try an approach of your own or learn it and use it )
+Welcome to the Cancer Image Analysis Competition! I'm hosting this to select some people for the hepatoma project in which we will be working with Task 1: Construct **Graph** based networks to extract **nucleus specific information** to make classification inferences.
+task 2: Downstream task to use a **generative network** to generate cancerous versions of the non cancerous images.
+
 Feel free to use ANY TOOL, ANY AI, ChatGPT and whatever you want as you wish :)
 
 ## Tasks
-Simple tasks, don't spend any time on these, copy code online instead
-1. **Load, preprocess, and augment data**
-2. **Classify images as cancerous or non-cancerous**<br>
-Complex tasks that will be evaluated based on approach (not acuracy not any other metric) <br>
-3. **Generate cancerous images from non-cancerous images using generative networks**: take the NON CANCEROUS images as input and generate an output of how this image would look like if it was cancerous <br>
-yes i know this sounds counterproductive but for the main project youwill be required to *generate* the next stage of the cancer from the current stage using GAN so this is why I gave this task <br>
-4. **Utilize Graph Convolutional Networks (GCNs) to analyze nucleus features** <br>
-Why did i ask you to use graphs? because theyre cool (I'm sadistic and like y=to make your lives herder)
+These tasks will be evaluated based on approach (not acuracy not any other metric so it ** DOES NOT MATTER IF THE SOLUTION IS ACCURATE OR NOT** due to the time constrain) 
+
+Use only 500 samples from the training data, the accuracy and other metrics don't matter as long as it's minimal so don't waste time on that :)
+
+1. **Utilize Graph Convolutional Networks (GCNs) to analyze nucleus features**, Incorporate strategies from the reference paper and,
+Utilize GNNs 
+The key idea is to learn nucleus features based on structure, texture, and edge at the nuclei level first and then move to inter-nuclear graphs (see paper;mentioned above).<br>
+2. **Generate cancerous images from non-cancerous images using generative networks**: Use Any type of generative network (i'd prefer gans / diffusion models) to take the NON CANCEROUS images as input and generate an output of how this image would look like if it was cancerous. 
+(eg: Non-cancerous image -> GAN -> Cancerous image)<br>
+
+(Don't focus on tuning the gan and increasing the accuracy)<br>
+
+yes i know this sounds counterproductive but for the main project you will be required to *generate* the next stage of the cancer from the current stage using GAN so this is why this task is important <br>
 
 ## Important Information
 - **Submission Deadline:** Before Friday
-- **Platform:** Google Colab
+- **Platform:** Any Jupyter notebook (I'd suggest link the data to collab and utilize the free gpu there, although you wont need it much)
 - **Dataset:** [Histopathological Cancer Detection - Cropped](https://drive.google.com/drive/folders/1T4De029U-OJAEEHCbym_efc2mdFox6S5?usp=sharing)
 (Additionally can be found on kaggle https://www.kaggle.com/datasets/drbeane/hcd-cropped/data)
-- **Code Examples for task 1,2 :** [Kaggle Code Examples](https://www.kaggle.com/datasets/drbeane/hcd-cropped/code)
-- **Reference Paper** (needed for step 4 and maybe 3): [Learning Shape-Aware Features with Generative Models for Nuclei Classification](https://arxiv.org/abs/2302.11416)
-- **Reference Code from the paper:** [SENUCLS](https://github.com/Lewislou/SENUCLS/tree/main)
+- **Reference Paper** (Utilize the techniques form this paper): [Learning Shape-Aware Features with Generative Models for Nuclei Classification](https://arxiv.org/abs/2302.11416)
+- **Reference Code from the paper above:** [SENUCLS](https://github.com/Lewislou/SENUCLS/tree/main)
 
 ## Evaluation Criteria
 
-The evaluation for this assignment is **not based on accuracy** or **performance metrics** but on **how you approach the problem**. Since the problem statement is very abstract and can be solved in multiple ways, your methodology and creativity are key.
-Networks
-## Tasks Details 
+The evaluation for this selection is **not based on accuracy** or **performance metrics** but on **how the problem is approached**. Since the problem statement is very abstract and can be solved in multiple ways, your methodology and creativity are key :)
 
-### Task 1: Load, preprocess, and augment data
-
-Use only 500 samples from the training data, idc about the accuracy and performance so don't waste time on that :)
-
-### Task 2: Classify if the image is cancerous or non-cancerous
-
-Use any classification model of your choice. Don't spend too much time on this; focus on the approach **after step 2.**
-
-### Task 3: Generate cancerous images from non-cancerous images using generative networks
-Here's where the competition begins,
-Use Any type of generative network (i'd prefer gans & diffusion models) to take the NON CANCEROUS images as input and generate an output of how this image would look like if it was cancerous. 
-(eg: Non-cancerous image -> GAN -> Cancerous image)
-Don't focus on tuning the gan and increasing the accuracy I will mainly evaluate the approach.
-
-
-
-### Task 4: Utilize Graph Convolutional Networks (GCNs) to analyze nucleus features
-
-Incorporate strategies from the reference paper and,
-Utilize GCN / graph based networks.
-The key idea is to learn nucleus features based on structure, texture, and edge at the nuclei level first and then move to inter-nuclear graphs (see paper;mentioned above).
-
-
-## ** Important Note. **
-Now i get that this might be too much to process but take your time, use any AI or reference or tool you want to and *please please please* dont focus on accuracy or metrics (this doesnt mean that you get reckless metrics but the bare minimum would work, dont tune the results instead focus on the approach), I want to evaluate your approach. If you've completed everything and have time before friday then sure feel free to improve the metrics for brownie points.
 
 
 
