@@ -1,5 +1,7 @@
 # Cancer Image Analysis Competition Overview
 
+## Submission link: https://forms.gle/9FycfXsSXgD9Hmuo7
+
 Welcome to the Cancer Image Analysis Competition! I'm hosting this to select some people for the hepatoma project in which we will be working with Task 1: Construct **Graph** based networks to extract **nucleus specific information** to make classification inferences.
 task 2: Downstream task to use a **generative network** to generate cancerous versions of the non cancerous images.
 
